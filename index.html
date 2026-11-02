@@ -134,7 +134,7 @@ section{padding-block:clamp(72px,10vw,128px)}
 @media (max-width:860px){.about-grid{grid-template-columns:1fr}}
 
 /* stats */
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border-block:1px solid var(--line);margin-top:clamp(56px,8vw,96px)}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border-block:1px solid var(--line);margin-top:clamp(56px,8vw,96px)}
 .stat{background:var(--bg);padding:28px 22px 26px}
 .stat .num{font-family:var(--f-display);font-weight:800;font-stretch:110%;font-size:clamp(40px,5vw,64px);line-height:1;font-variant-numeric:tabular-nums}
 .stat .lbl{margin-top:10px;font-weight:600}
@@ -154,7 +154,7 @@ section{padding-block:clamp(72px,10vw,128px)}
 @media (max-width:900px){.cap-grid{grid-template-columns:1fr}}
 
 /* tools */
-.tools{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .tool{border-radius:18px;border:1px solid var(--line);background:var(--surface);padding:18px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:transform .25s}
 .tool:hover{transform:translateY(-4px)}
 .tool::after{content:"";position:absolute;inset:auto -40% -60% -40%;height:120%;background:radial-gradient(closest-side,var(--c),transparent);opacity:.35}
@@ -162,6 +162,7 @@ section{padding-block:clamp(72px,10vw,128px)}
 .tool .g{font-family:var(--f-display);font-weight:900;font-stretch:115%;font-size:52px;line-height:1;color:var(--c);text-shadow:0 0 28px var(--c);position:relative;z-index:1}
 .tool .n{font-weight:600;font-size:14px;position:relative;z-index:1}
 .tool .d{font-size:12px;color:var(--muted);position:relative;z-index:1}
+.tool .lv{margin-top:10px;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--c);position:relative;z-index:1}
 @media (max-width:900px){
   .tools{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin-right:calc(-1 * var(--gut-r))}
   .tool{flex:0 0 42%;scroll-snap-align:start}
@@ -308,8 +309,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
           <a class="btn" href="#contact">Get in touch</a>
         </div>
         <div class="hero-meta">
-          <span>Videos · <b>160+</b></span>
-          <span>Feed designs · <b>40+</b></span>
           <span>GPA · <b>3.91</b></span>
         </div>
       </div>
@@ -349,12 +348,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     </div>
     <div class="wrap">
       <div class="stats">
-        <div class="stat"><div class="num"><span class="count" data-to="160">160</span>+</div><div class="lbl">Short-form videos</div><div class="sub">PLN 30+, Skala 40+, creator reels 90+</div></div>
-        <div class="stat"><div class="num"><span class="count" data-to="40">40</span>+</div><div class="lbl">Feed designs</div><div class="sub">PLN 20+, Skala 20+</div></div>
         <div class="stat"><div class="num"><span class="count" data-to="7">7</span></div><div class="lbl">Sectors filmed</div><div class="sub">From energy utility to cafés</div></div>
         <div class="stat"><div class="num"><span class="count" data-to="3.91" data-dec="2">3.91</span></div><div class="lbl">Cumulative GPA</div><div class="sub">out of 4.00</div></div>
       </div>
-      <p class="stats-note">Counts cover client work from Jun 2025 to Mar 2026.</p>
     </div>
   </section>
 
@@ -384,14 +380,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 
       <div class="sec-head" style="margin-top:clamp(72px,9vw,110px)">
         <div><p class="eyebrow">( 03 ) <b>Toolkit</b></p><h2>The tools <span class="grad-text">on my timeline.</span></h2></div>
-        <p>Desktop software for the heavier edits, mobile apps when a reel has to ship the same day.</p>
+        <p>CapCut on PC and Canva are the tools I work fastest in. I also use Adobe Premiere Pro at a basic level.</p>
       </div>
       <div class="tools">
-        <div class="tool" style="--c:#6f8bff"><span class="k">Editing</span><span class="g">Pr</span><div><div class="n">Adobe Premiere Pro</div><div class="d">Video editing</div></div></div>
-        <div class="tool" style="--c:#c98bff"><span class="k">Editing</span><span class="g">Cp</span><div><div class="n">CapCut</div><div class="d">Reels editing</div></div></div>
-        <div class="tool" style="--c:#4fc3ff"><span class="k">Design</span><span class="g">Ps</span><div><div class="n">Adobe Photoshop</div><div class="d">Feed graphics</div></div></div>
-        <div class="tool" style="--c:#7fa8ff"><span class="k">Photo</span><span class="g">Lr</span><div><div class="n">Adobe Lightroom</div><div class="d">Photo editing</div></div></div>
-        <div class="tool" style="--c:#ff7ab8"><span class="k">Design</span><span class="g">Ca</span><div><div class="n">Canva</div><div class="d">Layouts &amp; templates</div></div></div>
+        <div class="tool" style="--c:#c98bff"><span class="k">Editing</span><span class="g">Cp</span><div><div class="n">CapCut (PC)</div><div class="d">Reels editing</div><div class="lv">Expert</div></div></div>
+        <div class="tool" style="--c:#ff7ab8"><span class="k">Design</span><span class="g">Ca</span><div><div class="n">Canva</div><div class="d">Layouts &amp; templates</div><div class="lv">Expert</div></div></div>
+        <div class="tool" style="--c:#6f8bff"><span class="k">Editing</span><span class="g">Pr</span><div><div class="n">Adobe Premiere Pro</div><div class="d">Video editing</div><div class="lv">Basic</div></div></div>
       </div>
     </div>
   </section>
@@ -427,7 +421,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
             <h3>Skala Project</h3>
             <p class="role">Freelance Videographer &amp; Content Creator</p>
             <p class="ctx">Custom apparel and convection brand (@skalaproject.co)</p>
-            <div class="kpis"><div class="kpi"><b>40+</b><small>videos</small></div><div class="kpi"><b>20+</b><small>feed assets</small></div></div>
           </div>
           <ul>
             <li>Ran social content, product videography, and visual branding for the brand.</li>
@@ -441,12 +434,11 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
             <h3>PT PLN (Persero) UP3 Surabaya Barat</h3>
             <p class="role">Administration &amp; General Affairs Intern</p>
             <p class="ctx">Customer service and distribution unit of Indonesia's state-owned power company</p>
-            <div class="kpis"><div class="kpi"><b>30+</b><small>reels</small></div><div class="kpi"><b>20+</b><small>feed graphics</small></div></div>
           </div>
           <ul>
             <li>Led the visual content for the unit's official Instagram account.</li>
             <li>Produced and edited reels on public service updates and corporate achievements.</li>
-            <li>Designed feed graphics for announcements and national commemorative days in Photoshop and Canva.</li>
+            <li>Designed feed graphics for announcements and national commemorative days in Canva.</li>
             <li>Supported general affairs administration, correspondence, and digital document management.</li>
           </ul>
         </article>
@@ -456,7 +448,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
             <h3>Influencer Media &amp; Reels Surabaya</h3>
             <p class="role">Freelance Videographer &amp; Video Editor</p>
             <p class="ctx">Surabaya media agency and creators (@aiiaprilia, @bharep, @bhamaktri)</p>
-            <div class="kpis"><div class="kpi"><b>90+</b><small>promotional reels</small></div><div class="kpi"><b>4</b><small>client sectors</small></div></div>
+            <div class="kpis"><div class="kpi"><b>4</b><small>client sectors</small></div></div>
           </div>
           <ul>
             <li>Shot and edited reels for culinary, property, event management, and café clients.</li>
